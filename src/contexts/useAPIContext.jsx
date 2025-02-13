@@ -12,7 +12,7 @@ const ApiProvider = ({children}) => {
     const fetchUserData = async () => {
         try {
             
-            const response = await fetch(`${process.env.NEXT_PUBLIC_FAKE_STORE_URL}/products`)
+            const response = await fetch(`${process.env.NEXT_PUBLIC_FAKE_STORE_URL}/products `)
             if (!response.ok) {
                 throw new Error('Failed to fetch products');
             }
